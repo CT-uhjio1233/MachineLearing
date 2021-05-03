@@ -1,1 +1,1 @@
-#
+import osimport shutilif not os.path.exists("Face_detection"): os.mkdir("Face_detection")if not os.path.exists("Face_detection/cfg"): os.mkdir("Face_detection/cfg")  os.mkdir("Face_detection/weights")if not os.path.exists("Face_detection/cfg/face.data"): shutil.copyfile("darknet/cfg/coco.data", "Face_detection/cfg/face.data")if not os.path.exists("Face_detection/cfg/face.names"): shutil.copyfile("darknet/cfg/coco.names", "Face_detection/cfg/face.names")
